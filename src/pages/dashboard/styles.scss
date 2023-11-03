@@ -1,0 +1,75 @@
+// .dashboard{
+//   overflow: scroll;
+//   width: 100vw;
+//   height: 100vh;
+//   .card-column-container{
+//     display: flex;
+//     // width: 100%;
+//     // justify-content: space-around;
+//     // align-items: start;
+//     .card-column{
+//       min-width: 360px;
+//       max-width: 360px;
+//       margin: 20px;
+//       .head-info{
+//         margin-bottom: 20px;
+//         .head-icon{
+//           width: 20px;
+//           height: 20px;
+//           background-color: rgb(158, 158, 158);
+//           border-radius: 50%;
+//           margin-right: 10px;
+//         }
+//       }
+//       .card-column-cards{
+
+//         // flex: 1;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: start;
+//         align-items: center;
+//       }
+//     }
+//   }
+// }
+
+.dashboard {
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+
+  .card-column-container {
+    display: flex;
+
+    .card-column {
+      min-width: 360px;
+      max-width: 360px;
+      margin: 20px;
+
+      .head-info {
+        margin-bottom: 20px;
+
+        .head-icon {
+          width: 20px;
+          height: 20px;
+          background-color: #3498db; /* Change the color to a desired one */
+          border-radius: 50%;
+          margin-right: 10px;
+          // Add the following lines for better centering
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // Add transition for a smooth effect
+          transition: background-color 0.3s ease-in-out;
+        }
+      }
+
+      .card-column-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+// .card{
+//   background-color: #fff;
+//   width: 100%;
+//   // width: 400px;
+//   // height: 30px;
+//   padding: 20px;
+//   box-shadow: 0px 0px 10px #c6c6c6;
+//   margin: 10px;
+//   border-radius: 5px;
+//   // max-width: 300px;
+//   transition: 200ms;
+//   min-height: 140px;
+//   &:hover{
+//     transform: scale(1.02);
+//     transition: 200ms;
+//   }
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: start;
+//   .card-head{
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     font-size: 0.75rem;
+//     margin-bottom: 3px;
+//     font-weight: 800;
+//     color: #888888;
+//     .profile-pic{
+//       width: 20px;
+//       height: 20px;
+//       background-color: #c3c3c3;
+//       border-radius: 50%;
+//     }
+//   }
+//   .card-body{
+//     .content{
+//       display: flex;
+//       margin: 0 0 10px 0;
+//       .status{
+//         margin-top: 2px;
+//         min-width: 15px;
+//         max-width: 15px;
+//         min-height: 15px;
+//         max-height: 15px;
+//         border-radius: 50%;
+//         height: 20px;
+//         margin-right: 10px;
+//         background-color: #e1e1e1;
+//       }
+//     }
+//     width: 100%;
+    
+//   }
+//   .card-end{
+//     width: 100%;
+//     font-size: 0.8rem;
+//     .tag{
+//       display: inline;
+//       color: #888888;
+//       border: 1px solid #c3c3c3;
+//       padding: 3px 5px;
+//       border-radius: 5px;
+//     }
+//   }
+// }
+
+
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+  min-height: 140px;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .card-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333; /* Darkened text color */
+
+    .profile-pic {
+      width: 24px;
+      height: 24px;
+      background-color: #e75a08; /* Changed to a vibrant orange color */
+      border-radius: 50%;
+    }
+  }
+
+  .card-body {
+    .content {
+      display: flex;
+      margin: 0 0 10px 0;
+
+      .status {
+        margin-top: 2px;
+        min-width: 15px;
+        max-width: 15px;
+        min-height: 15px;
+        max-height: 15px;
+        border-radius: 50%;
+        height: 20px;
+        margin-right: 10px;
+        background-color: #aaa9b9;
+        // You can add a subtle gradient for a modern look
+        background: linear-gradient(45deg, #aaa9b9, #d3d2e1);
+      }
+    }
+    width: 100%;
+  }
+
+  .card-end {
+    width: 100%;
+    font-size: 0.9rem;
+    .tag {
+      display: inline;
+      color: #333;
+      border: 1px solid #e75a08; /* Matched border color to the profile pic */
+      padding: 5px 10px; /* Increased padding for better spacing */
+      border-radius: 5px;
+
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
